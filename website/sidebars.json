@@ -1,0 +1,10 @@
+{
+  "docs": {
+    "Getting started": ["getting-started"],
+    "The SCK Command Line": ["doc1","doc2"],
+    "HARDWARE": ["doc3"],
+    "SOFTWARE": ["doc4"],
+    "FAQ": ["doc5"],
+    "Troubleshooting": ["faq1"]
+  }
+}
