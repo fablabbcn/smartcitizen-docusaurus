@@ -21,7 +21,7 @@ const users = [
 ];
 
 const siteConfig = {
-  title: 'Smartcitizen documentation' /* title for your website */,
+  title: 'Smartcitizen Docs' /* title for your website */,
   tagline: 'SmartCitizen',
   url: 'https://fablabbcn.github.io/smartcitizen-docusaurus/' /* your website url */,
   baseUrl: '/' /* base url for your project */,

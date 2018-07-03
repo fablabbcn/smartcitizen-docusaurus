@@ -1,0 +1,23 @@
+{
+  "version-1.5.0-docs": {
+    "Getting started": [
+      "version-1.5.0-getting-started"
+    ],
+    "The SCK Command Line": [
+      "version-1.5.0-doc1",
+      "version-1.5.0-doc2"
+    ],
+    "HARDWARE": [
+      "version-1.5.0-doc3"
+    ],
+    "SOFTWARE": [
+      "version-1.5.0-doc4"
+    ],
+    "FAQ": [
+      "version-1.5.0-doc5"
+    ],
+    "Troubleshooting": [
+      "version-1.5.0-faq1"
+    ]
+  }
+}
