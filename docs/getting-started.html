@@ -1,0 +1,831 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Getting started · Smartcitizen documentation</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="### Adding a Smart Citizen Kit"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Getting started · Smartcitizen documentation"/><meta property="og:type" content="website"/><meta property="og:url" content="https://fablabbcn.github.io/smartcitizen-docusaurus//index.html"/><meta property="og:description" content="### Adding a Smart Citizen Kit"/><meta property="og:image" content="https://fablabbcn.github.io/smartcitizen-docusaurus/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://fablabbcn.github.io/smartcitizen-docusaurus/img/docusaurus.png"/><link rel="shortcut icon" href="/img/favicon.png"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://fablabbcn.github.io/smartcitizen-docusaurus/blog/atom.xml" title="Smartcitizen documentation Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://fablabbcn.github.io/smartcitizen-docusaurus/blog/feed.xml" title="Smartcitizen documentation Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/css/main.css"/></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/docusaurus.svg" alt="Smartcitizen documentation"/><h2 class="headerTitleWithLogo">Smartcitizen documentation</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive siteNavItemActive"><a href="/docs/getting-started.html" target="_self">Documentation</a></li><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li><li class=""><a href="/en/help.html" target="_self">Help</a></li><li class=""><a href="/blog" target="_self">Blog</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>Getting started</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Getting started</h3><ul><li class="navListItem navListItemActive"><a class="navItem" href="/docs/getting-started.html">Getting started</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">The SCK Command Line</h3><ul><li class="navListItem"><a class="navItem" href="/docs/doc1.html">Example Page</a></li><li class="navListItem"><a class="navItem" href="/docs/doc2.html">document number 2</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">HARDWARE</h3><ul><li class="navListItem"><a class="navItem" href="/docs/doc3.html">This is document number 3</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">SOFTWARE</h3><ul><li class="navListItem"><a class="navItem" href="/docs/doc4.html">Other Document</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">FAQ</h3><ul><li class="navListItem"><a class="navItem" href="/docs/doc5.html">Fifth Document</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Troubleshooting</h3><ul><li class="navListItem"><a class="navItem" href="/docs/faq1.html">How do I register my SCK?</a></li></ul></div></div></section></div><script>
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              const headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                if (event.target.tagName === 'A') {
+                  document.body.classList.remove('tocActive');
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">Getting started</h1></header><article><div><span><h3><a class="anchor" aria-hidden="true" id="adding-a-smart-citizen-kit"></a><a href="#adding-a-smart-citizen-kit" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Adding a Smart Citizen Kit</h3>
+<p><img src="img/sck_1.1_3.jpg" alt="Smart Citizen kit 1.1"></p>
+<p><em>Welcome aboard!</em> The Smart Citizen Team wants to thank you for being here, for purchasing a kit, and for joining the community taking part in this adventure.</p>
+<p>To join the <em>Smart Citizen family</em>, we're going to walk you through the steps to add your Smart Citizen Kit to the platform, we'll refer to the Smart Citizen Kit as the <em>SCK</em> for now on.</p>
+<p><em>SIGN UP</em></p>
+<p>First, go to <a href="https://smartcitizen.me/" target="_blank">smartcitizen.me</a> using your web browser, currently only Google Chrome is supported for the SCK configuration process. Click in <strong>Go to the platform</strong> and then <strong>Sign up</strong> on the upper right menu. Complete the required fields, accept the <em><a href="https://smartcitizen.me/privacy">Terms of use and privacy</a></em> and click the <strong>Sign up</strong> button.</p>
+<p>Required Fields:</p>
+<ul>
+<li><p><strong>Username</strong> - Pick any name you want as long as someone else isn't already using the it.</p></li>
+<li><p><strong>Email</strong> - Enter your email address.</p></li>
+<li><p><strong>Password</strong> - Must be at least 6 characters.</p></li>
+</ul>
+<p>You are now registered, you will receive an email notification. You will be able to complete your user details  later on your <a href="https://smartcitizen.me/profile/users">profile page</a>.</p>
+<p><em>ADD YOUR SMART CITIZEN KIT</em></p>
+<p>On the upper right menu click on <strong>Log in</strong> and write the access credentials you just choose. Go on your user icon on the upper right corner and click <a href="https://smartcitizen.me/profile/kits">Profile</a>. On your kit's profile page click on <a href="https://smartcitizen.me/kits/new">Add a new kit</a>.</p>
+<p>Please, provide basic information about your kit so others can understand better how you set it up and how you plan to use it.</p>
+<ul>
+<li><p><strong>Title</strong> - Give your SCK a name. This title will be associated with your SCK data.</p></li>
+<li><p><strong>Exposure</strong> - The SCK is designed to work outdoors but maybe you like to test it indoors first. Choose INDOOR or OUTDOOR to help others understand the data you will provide.</p></li>
+<li><p><strong>Kit location</strong> - Please, let us locate you, later you can adjust the location by dragging the marker on the map.</p></li>
+<li><p><strong>Kit tags</strong> - We suggest you to add tags to help other find your kit. Choose from the available tags or submit a tag request on the <a href="http://forum.smartcitizen.me">Forum</a>.</p></li>
+<li><p><strong>Description</strong> - This is an optional field that helps  others understand the data you provide.  Why is it for? Is this part of any kind of project? Information like &quot;outdoors in my balcony facing the road&quot; or &quot;in my garden under a tree&quot; could help others understand why some of your data looks the way it does.</p></li>
+</ul>
+<p>Click on the <strong>Next</strong> button, you are close to the end.</p>
+<p><em>SETUP YOUR SMART CITIZEN KIT</em></p>
+<p>In order to have your kit connected to the Smart Citizen platform, we need a few step involving the connexion of your kit to your computer. This tool will help you register your kit to the platform, setup your kit's Wi-Fi settings and update its firmware. Currently we support Google Chrome in Win, Mac and Linux.</p>
+<p><em>If you are on Windows check first <a href="#/start/how-to-install-the-drivers-on-windows">How to install the drivers on Windows?</a> section for more information.</em></p>
+<p>Click on the <em>ADD TO CHROME</em> button and wait for the extension to install.</p>
+<p><img src="img/sck_app_chrome.png" alt="Sck Chrome App"></p>
+<p>Finally its time to unpack your SCK. Connect the micro USB cable to your SCK and your computer and turn on the SCK switch on the upper left corner.</p>
+<p>On the dropdown menu you should select the port your SCK is connected.</p>
+<p><em>On Mac and Linux the port will be named Smartcitizen or something like /dev/ttyACM0. On Windows this is likely to be COM3 or higher (COM1 and COM2 are usually reserved for hardware serial ports). To find out, you can disconnect your SCK and check the dropdown; the entry that disappears should be the SCK board. Reconnect the board and select that serial port.</em></p>
+<p><em>If you have any issue check your kit is properly connected, switched ON and you do not have the Arduino IDE or other software that uses the serial port open. We recommend you to switch your kit OFF and ON in order to reset the kit before you start.</em></p>
+<p>Now just click <strong>Start process</strong> in order to start configuring your kit.</p>
+<p>The configurator will try to determine your hardware and firmware version, if your <strong>firmware version is below 0.9.3</strong> you need to update the firmware in order to continue with the process.</p>
+<p><img src="img/conf1.jpg" alt="Old firmware"></p>
+<p>If the configurator can't communicate with your board it will report an <strong>Unrecognized board</strong>, we recommend you to try a couple of times, disconnecting your kit, reloading the page and connecting it again to make sure that this is not just a serial port communication problem.</p>
+<p>If the configurator still can't communicate with your kit it may be a firmware/hardware problem. You may try to install the firmware and see if this solves the problem.</p>
+<p><img src="img/conf2.jpg" alt="Unrecognized board"></p>
+<p>If you <strong>can't upload the firmware</strong> please refer to the <a href="#/start/firmware-update-problem">Firmware update problem</a> section or try doing a <a href="#/start/manual-set-up-the-compilation-way">Manual set up.</a></p>
+<p>After firmware is installed/updated we can continue with Wi-Fi settings.</p>
+<p><img src="img/conf3.jpg" alt="Wifi settings"></p>
+<p><em>You can add up to 5 different Wi-Fi credentials in your kit. This will allow your kit to connect to multiple networks in case one fails or you will like to move in between to places</em></p>
+<p>You should complete the fields with your router or access point information:</p>
+<p><em>At home you should find all the requested information below your home fiber or DSL router on schools and companies you can contact your IT team</em></p>
+<ul>
+<li><p><strong>SSID</strong> - This is your Wifi network's name, for example: <em>My Home Wifi</em>.</p></li>
+<li><p><strong>Phrase</strong> - This is your Wi-Fi <em>password</em>, you will usually find it written under your router or you can contact your IT team. If your Wi-Fi doesn't have a password just leave it empty and select <em>Open Wi-Fi network</em> on the <em>Encryption</em> dropdown.</p></li>
+</ul>
+<p><em>Take care the SSID and Phrase can't be longer than 19 characters and they can't contain the <code>$</code> symbol.</em></p>
+<ul>
+<li><p><strong>Encryption</strong> -  <em>Optional</em>  You can leave it to <em>WPA2</em> this is the default for most modern networks.</p></li>
+<li><p><strong>External Antenna</strong> - <em>Optional</em> Is your SCK quite far away from Wi-Fi access point? You can use an external antenna with your SCK. Check the <a href="#/start/how-i-can-extend-the-wi-fi-range">How to use an external antenna?</a> )</p></li>
+</ul>
+<p>Next step is optional, you can set your SCK update interval to optimize the battery performance and sensor resolution ratio.</p>
+<p><img src="img/conf4.jpg" alt="Udate interval"></p>
+<p><em>By default your SCK will take a reading every minute and post it on-line</em></p>
+<ul>
+<li><p><strong>Reading interval</strong> - This defines every how much time your SCK sensors will take a reading and record it. You can set it from 1 minute to an hour.</p></li>
+<li><p><strong>Number posts</strong> - This defines every how much sensor readings your SCK will publish the reading on-line. You can set it from 1 to 20.</p></li>
+</ul>
+<p>Now is time to record the settings on your SCK, just click on <strong>Sync Settings</strong> and wait for a moment.</p>
+<p>*If there is any issue during the process this will be displayed on the <strong>Message window</strong> above. I f you need help please contact <a href="mailto:support@smartcitizen.me">support@smartcitizen.me</a> *</p>
+<p>Last but now least you will see your SCK <em>Mac Address</em> registered below this is the ID of your SCK. Just click on <strong>Save</strong> and wait for your kit to publish. <strong>Done!</strong></p>
+<p><em>You might need to wait up to 2 minutes or more if you changed the time update settings and refresh your browser in order to see your SCK first post in your device page.</em></p>
+<p><strong>Did you registered your SCK before or did your SCK belong to someone else before?</strong> <em>Take care your SCK can be registered once at a time, in case you registered before check <a href="#/start/how-do-i-register-again-my-sck">How to unlink your SCK?</a> or contact <a href="mailto:support@smartcitizen.me">support@smartcitizen.me</a> .</em></p>
+<p><em>Please, if your kit is not publishing properly contact <a href="mailto:support@smartcitizen.me">support@smartcitizen.me</a> or ask for help in the <a href="http://forum.smartcitizen.me/">forum</a> .</em></p>
+<h3><a class="anchor" aria-hidden="true" id="manual-set-up-the-serial-way"></a><a href="#manual-set-up-the-serial-way" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Manual set up: The Serial Way</h3>
+<p>In this tutorial aimed to advanced users you will configure your SCK using serial communication. By using serial communication, you will register your Wi-Fi settings into the SCK and save the SCK’s MAC address in our server.</p>
+<p>The SCK, like most Arduino chips, has the ability to communicate through serial protocol (when plugged with a proper USB cable). The SCK uses the WiFly module to communicate with your Wi-Fi router. Anyway, through serial communication you will be able to send the commands directly with this module to set your Wi-Fi settings and extract the MAC address used by our server to verify your identity.</p>
+<p>Note that this tutorial works for both SCK v1.0 (from the Goteo crowdfunding campaign) and SCK v1.1 (from the KickStarter crowdfunding campaign), independently of the firmware version used.</p>
+<h4><a class="anchor" aria-hidden="true" id="step-1-configuring-the-wi-fi-settings"></a><a href="#step-1-configuring-the-wi-fi-settings" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>STEP 1: Configuring the Wi-Fi settings</h4>
+<ul>
+<li>Open Arduino IDE.</li>
+<li>Connect your SCK via USB.</li>
+<li>From the Tools &gt; Board menu, choose the right USB port (generally the last one).</li>
+<li>From the Tools &gt; Serial port menu, select the right board. This is Leonardo for SCK v1.0 (Goteo) or LilyPad Arduino USB for SCK v1.1 (Kickstarter).</li>
+<li>Open the serial monitor window in the Arduino IDE (button at the top-right of the main window).</li>
+<li>Set the options to &quot;115200 baud&quot; and “No line return” (drop-down menu at the bottom-right of the monitor window).</li>
+<li>Wake up the module and activate the Wi-Fi command mode by typing in the serial monitor:</li>
+</ul>
+<p><code>$$$</code></p>
+<ul>
+<li><p>Change to “Carriage return” option (drop-down menu at the bottom-right of the monitor window)</p></li>
+<li><p>Add a new SSID to memory by typing:</p></li>
+</ul>
+<p><code>set wlan ssid XXX</code></p>
+<p>Note: You have to replace XXX with your ssid name, filling any space with the dollar ($) character. Due to hardware limitations it can't be longer than 32 characters.</p>
+<ul>
+<li>Add a new phrase to memory (optional, password for WPA1 &amp; WPA2):</li>
+</ul>
+<p><code>set wlan phrase XXX</code></p>
+<p>Note: You have to replace XXX with your phrase, filling any space with the dollar ($) character.</p>
+<ul>
+<li>Add a new key to memory  (optional, password for WEP &amp; WEP64):</li>
+</ul>
+<p><code>set wlan key XXX</code></p>
+<ul>
+<li>Add an authentication method into memory (replace XXX by “0” for Open,  “1” for WEP, “2” for WPA1, “4” for WPA2, “8” for WEP64):</li>
+</ul>
+<p><code>set wlan auth XXX</code></p>
+<ul>
+<li>Add an antenna type into memory (replace XXX by “0” to use the internal antenna or “1” if you use an external antenna):</li>
+</ul>
+<p><code>set wlan ext_antenna XXX</code></p>
+<ul>
+<li>Get the MAC address of the kit by typing:</li>
+</ul>
+<p><code>get mac</code></p>
+<ul>
+<li><p>Copy/Save the answer for further use.</p></li>
+<li><p>Exit and go back to the normal operational mode by typing:</p></li>
+</ul>
+<p><code>exit</code></p>
+<h4><a class="anchor" aria-hidden="true" id="step-2-registering-the-kit-in-the-platform"></a><a href="#step-2-registering-the-kit-in-the-platform" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>STEP 2: Registering the kit in the platform</h4>
+<p>After you've uploaded your settings, don't forget to register your kit in our database by saving it's mac address. To find the mac address, you can use the serial command &quot;get mac&quot;. Or have a look at the wifi module on the board and read the serial number under the bar code (something like &quot;131G0006662116E4&quot; on kit v1.0 or &quot;0006662116E4&quot; on kit v.1.1).</p>
+<p><img src="img/mac_manual_sticker.jpg" alt="Find The Mac Address"></p>
+<p>The <a href="http://en.wikipedia.org/wiki/MAC_address">mac address</a> is the last 12 digit of this serial, separated by a colon every two number. From a number like <code>0006662116E4</code> you would write <code>00:06:66:21:16:E4</code>.</p>
+<p>In both cases, you have to fill the mac address input field in the configuration page of your kit and press the save button.</p>
+<p><img src="img/mac_2.png" alt="Register The Kit"></p>
+<p>You are now done with the manual configuration of your SCK. Wait for a few minutes to see your data coming on the server and being displayed on the web page. You can also check that everything is ok by looking at the Arduino serial monitor. Debug messages coming from your SCK should look like this:</p>
+<p>If you want to explore further options with the WiFly module check <a href="#/start/the-sck-command-line">The SCK Command Line</a> section.</p>
+<p>If you encounter any issue, please share your problem on the <a href="http://forum.smartcitizen.me/">forum</a></p>
+<h3><a class="anchor" aria-hidden="true" id="manual-set-up-the-compilation-way"></a><a href="#manual-set-up-the-compilation-way" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Manual set up: The Compilation Way</h3>
+<p>This tutorial is aimed to advanced users, we will guide you through the process of setting up your kit by editing directly the source code. As the code is Open Source, one way of setting the Wi-Fi of your SCK is to download the latest firmware, edit some lines of code, recompile it and upload it to the kit.</p>
+<p>One advantage of this method is that it gives you the opportunity to register multiple Wi-Fi networks at the same time and make the persistent. The Wi-fi networks that you register directly in the source code are called <em>hardcoded</em> and the only way to remove them is with the same process of compiling and uploading the firmware again. This is useful if your SCK is traveling from one location to another where the Wi-Fi credentials are known.</p>
+<p>The downside of this method is that you can not extract the MAC address of your kit, if you don't know it yet you will have to use the method described in <a href="#/start/manual-set-up-the-serial-way">The Serial Way</a> or via the configurator in the setup page of your kit.</p>
+<h4><a class="anchor" aria-hidden="true" id="step-1-getting-the-firmware"></a><a href="#step-1-getting-the-firmware" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>STEP 1: Getting the Firmware</h4>
+<p>You can download the latest firmware on our Github:</p>
+<p><a href="https://github.com/fablabbcn/Smart-Citizen-Kit/releases">https://github.com/fablabbcn/Smart-Citizen-Kit/releases</a></p>
+<p>As you may know, the hardware and software are based on the Arduino project. We will use the Arduino IDE to edit the firmware and upload it to the kit. This tutorial have been tested with Arduino 1.6.8, please download and install the <a href="https://www.arduino.cc/en/Main/Software">Arduino IDE</a>.</p>
+<p>Once installed open the file <code>Smart-Citizen-Kit/sck_beta_v0_9_0/sck_beta_v0_9.ino</code></p>
+<h4><a class="anchor" aria-hidden="true" id="step-2-editing-the-code"></a><a href="#step-2-editing-the-code" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>STEP 2: Editing the code</h4>
+<p>If you want to set the network configuration manually, you should go to the <code>Constants.h</code> tab and modify the lines you see below:</p>
+<pre><code class="hljs css languages- cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> networks 0</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">if</span> (networks &gt; 0)</span>
+<span class="hljs-keyword">static</span> <span class="hljs-keyword">char</span>* mySSID[networks]      = { 
+  <span class="hljs-string">"SSID1"</span>      , <span class="hljs-string">"SSID2"</span>            };
+<span class="hljs-keyword">static</span> <span class="hljs-keyword">char</span>* myPassword[networks]  = { 
+  <span class="hljs-string">"PASS1"</span>      , <span class="hljs-string">"PASS2"</span>            };
+<span class="hljs-keyword">static</span> <span class="hljs-keyword">char</span>* wifiEncript[networks] = { 
+  WPA2         , WPA2               };
+<span class="hljs-keyword">static</span> <span class="hljs-keyword">char</span>* antennaExt[networks]  = { 
+  INT_ANT      , INT_ANT            };
+<span class="hljs-meta">#<span class="hljs-meta-keyword">endif</span>      </span>
+</code></pre>
+<p>The easiest way would be to write <code>&quot;#define networks X&quot;</code> (where X is the number of WI-FI networks you are going to use) and fill the options for your network:</p>
+<ul>
+<li>Add the name of your network in <code>SSIDX</code> and the corresponding password in <code>PASSX</code>. Due to hardware limitations neither the password or the ssid can't be longer tham 32 characters.</li>
+<li>On <code>wifiEncript</code> you could also choose the encryption mode that fits with your network's configuration (<code>OPEN</code>, <code>WEP</code>, <code>WPA1</code>, <code>WPA2</code>, <code>WEP64</code>).</li>
+<li>On <code>antennaExt</code> you can choose the type of antenna you are using (<code>INT_ANT</code> for internal antenna (default) or <code>EXT_ANT</code> for external antenna).</li>
+</ul>
+<p>If you register only one wifi credential, you should obtain something like this:</p>
+<pre><code class="hljs css languages- cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> networks 1</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">if</span> (networks &gt; 0)</span>
+<span class="hljs-keyword">char</span>* mySSID[networks]      = { <span class="hljs-string">"MyWifiSSID"</span> };
+<span class="hljs-keyword">char</span>* myPassword[networks]  = { <span class="hljs-string">"MyPassword"</span> };
+<span class="hljs-keyword">char</span>* wifiEncript[networks] = { WPA2 };
+<span class="hljs-keyword">char</span>* antennaExt[networks]  = { INT_ANT };
+<span class="hljs-meta">#<span class="hljs-meta-keyword">endif</span></span>
+</code></pre>
+<p><em>Note that if you configure more than one Wi-fi network you have to separate the variables with a comma, for example:</em></p>
+<pre><code class="hljs css languages- cpp"><span class="hljs-keyword">char</span>* mySSID[networks] = { <span class="hljs-string">"MyFirstSSID"</span>, <span class="hljs-string">"MySecondSSID"</span> };
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="step-3-uploading-the-code"></a><a href="#step-3-uploading-the-code" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>STEP 3: Uploading the code</h4>
+<p><img src="img/arduino_board.png" alt="Select the board"></p>
+<p>On the Arduino IDE <em>Tools</em> menu you should select the right <strong>Board</strong> in the <em>Boards</em> menu:</p>
+<ul>
+<li><p>For SmartCitizen Kit version 1.0 select <em>Arduino Leonardo</em> (ATmega 32U4 at 16Mhz)</p></li>
+<li><p>For SmartCitizen Kit version 1.1 select <em>Arduino LilyPad USB</em> (ATmega 32U4 at 8Mhz)</p></li>
+</ul>
+<p>The Arduino IDE should automatically select the right USB port but you can check it in the <em>Tools</em> &gt;&gt; <em>Port</em> menu.</p>
+<p><img src="img/arduino_upload_small.png" alt="Upload the firmware"></p>
+<p>Now you just need to click the <em>Upload</em>  button and Arduino will do the rest for you!</p>
+<p>In case you have any issue please check the <a href="https://www.arduino.cc/en/guide/troubleshooting">Arduino Troubleshooting</a> guide.</p>
+<h4><a class="anchor" aria-hidden="true" id="step-4-registering-the-kit-in-the-platform"></a><a href="#step-4-registering-the-kit-in-the-platform" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>STEP 4: Registering the kit in the platform</h4>
+<p>After you’ve uploaded your settings, don’t forget to register your kit in our database by saving it’s mac address. To find the mac address, you can use the serial command “get mac”  by following the section <a href="#/start/manual-set-up-the-serial-way">The Serial Way</a>. Or have a look at the wifi module on the board and read the serial number under the bar code (something like “131G0006662116E4” on kit v1.0 or “0006662116E4” on kit v.1.1).</p>
+<p><img src="img/mac_manual_sticker.jpg" alt="Find The Mac Address"></p>
+<p>The <a href="http://en.wikipedia.org/wiki/MAC_address">mac address</a> is the last 12 digit of this serial, separated by a colon every two number. From a number like <code>0006662116E4</code> you would write <code>00:06:66:21:16:E4</code>.</p>
+<p>In both cases, you have to fill the mac address input field in the configuration page of your kit and press the save button.</p>
+<p><img src="img/mac_2.png" alt="Register The Kit"></p>
+<p>You are now done with the manual configuration of your SCK. Wait for a few minutes to see your data coming on the server and being displayed on the web page. You can also check that everything is ok by looking the output of your kit via the Arduino serial monitor.</p>
+<p>If you encounter any issue, please share your problem on the <a href="http://forum.smartcitizen.me/">forum</a></p>
+<h3><a class="anchor" aria-hidden="true" id="attaching-the-solar-panel"></a><a href="#attaching-the-solar-panel" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Attaching the solar panel</h3>
+<p>The solar panel should fulfill the specification of a voltage bigger than 8v and less than 15v, 12v is the recommended voltage, and a minimum of 500mA.</p>
+<p>In order to attach the solar panel you have to solder the cables of the solar panel to the pads marked in the next image for version 1.0 of the SCK. For version 1.1 you have to connect the cables to the connector marked in the next image.</p>
+<p>In both versions, yo have to attach the plus of solar panel to the plus pad of the SCK, and the minus of the solar panel to the minus pad of the SCK.</p>
+<p><img src="img/v1.0/main_board_solar_panel.jpg" alt="Solar Panel">
+<img src="img/main_board_solar_panel.jpg" alt="Solar Panel"></p>
+<h3><a class="anchor" aria-hidden="true" id="sensor-calibration"></a><a href="#sensor-calibration" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Sensor calibration</h3>
+<p><strong>Coming soon!</strong></p>
+<h3><a class="anchor" aria-hidden="true" id="connecting-from-an-iphone-or-android"></a><a href="#connecting-from-an-iphone-or-android" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Connecting from an iPhone or Android</h3>
+<p><strong>Coming soon!</strong></p>
+<h1><a class="anchor" aria-hidden="true" id="the-sck-command-line"></a><a href="#the-sck-command-line" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>The Sck Command Line</h1>
+<p>The Smart Citizen Kit can be managed over a basic serial protocol. You just need the <strong>Arduino IDE Serial Monitor</strong> or any other <strong>Serial Utility</strong> like <strong>Screen</strong> in order to use it.</p>
+<p><strong>How to use it</strong></p>
+<ul>
+<li>Connect to your kit using any serial utility, any baud-rate should work but 115200 is recommendable.</li>
+<li>Send the starting commands.</li>
+<li>Notice all the commands except the starting command($$$) require a carriage return at the end: CR or \r. If you are using the Arduino IDE is enough if you change to “Carriage return” option (drop-down menu at the bottom-right of the monitor window).</li>
+<li>Call any command you want, change XXX with the corresponding value, filling any space with the dollar ($) character.</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="sck-wifly-commands"></a><a href="#sck-wifly-commands" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>SCK Wifly commands</h3>
+<ul>
+<li><code>$$$</code> (Wake up the module and activate the Wi-Fi)</li>
+<li><code>set wlan ssid XXX</code> (Add a new SSID to memory9)</li>
+<li><code>set wlan phrase XXX</code> (Add a new phrase to memory)</li>
+<li><code>set wlan key XXX</code> (Add a new key to memory)</li>
+<li><code>set wlan auth XXX</code> (Add an authentication method into memory)</li>
+<li><code>set wlan ext_antenna XXX</code> (Add an antenna type into memory)</li>
+<li><code>exit</code> (Go back to normal operational mode)</li>
+</ul>
+<p>If you want to know more about wifly commands look at the <a href="http://ww1.microchip.com/downloads/en/DeviceDoc/50002230A.pdf">WiFly Command Reference</a></p>
+<h3><a class="anchor" aria-hidden="true" id="sck-commands"></a><a href="#sck-commands" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>SCK commands</h3>
+<ul>
+<li><code>###</code> (Wake up the module and enter SCK commands mode)</li>
+<li><code>get mac</code> (Get the MAC address of the kit)</li>
+<li><code>get time update</code> (Retrieve the sensor update interval)</li>
+<li><code>set time update XXX</code> (Update the sensor update interval, <em>10-3600 sec</em>)</li>
+<li><code>get number updates</code> (Retrieve the max number of bulk updates)</li>
+<li><code>set number updates XXX</code> (Update the max number of bulk updates, <em>1-20 updates</em>)</li>
+<li><code>get apikey</code> (Retrieve the kit APIKEY)</li>
+<li><code>set apikey XXX</code> (Update the kit APIKEY)</li>
+<li><code>get wlan ssid</code> (Retrieve the SSID saved on the kit)</li>
+<li><code>get wlan phrase</code> (Retrieve the phrase and KEY saved on the kit)</li>
+<li><code>get wlan auth</code> (Retrieve the authentication method saved on the kit)</li>
+<li><code>get wlan ext_antenna</code> (Retrieve the antenna type saved on the kit)</li>
+<li><code>clear nets</code> (Remove all saved Wi-Fi configuration information)</li>
+<li><code>clear memory</code> (Reset to defaults all configuration information)</li>
+<li><code>get all</code> (Retrieve all settings saved on the kit in a single line: <em>|version|MAC|ssid,phrase,auth,ext_antenna|hardcodedNets|timeUpdate|numUpdate|</em>)</li>
+<li><code>data</code> (Retrieves sensor readings stored in memory)</li>
+<li><code>exit</code> (Goes back to normal operational mode)</li>
+</ul>
+<h1><a class="anchor" aria-hidden="true" id="hardware"></a><a href="#hardware" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Hardware</h1>
+<h3><a class="anchor" aria-hidden="true" id="inside-the-sck"></a><a href="#inside-the-sck" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Inside the SCK</h3>
+<h4><a class="anchor" aria-hidden="true" id="main-board"></a><a href="#main-board" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Main Board</h4>
+<p>The main board contains the basic functionality like sensor I/O to read de sensor values, communication with the platform through the wifi module, manage the power and battery charging.</p>
+<p><img src="img/v1.0/main_board_cpu.jpg" alt="Main Board CPU">
+<img src="img/main_board_cpu.jpg" alt="Main Board CPU"></p>
+<p>#####PINOUT</p>
+<p>The SCK Main Board connects to the Sensor Board 16 pin connector. This is how the pins are laid out on the board. The numbers in brackets are the actual pin numbers of the micro controller. Pins IO are digital and S are analogue.</p>
+<table>
+<thead>
+<tr><th></th><th></th></tr>
+</thead>
+<tbody>
+<tr><td>GND</td><td>GND</td></tr>
+<tr><td>IO3 (10)</td><td>IO2 (9)</td></tr>
+<tr><td>IO1 (13)</td><td>IO0 (5)</td></tr>
+<tr><td>SCL</td><td>SDA</td></tr>
+<tr><td>S5  (A1)</td><td>S4  (A0)</td></tr>
+<tr><td>S3  (A3)</td><td>S2  (A2)</td></tr>
+<tr><td>S1  (A5)</td><td>S0  (A4)</td></tr>
+<tr><td>VBAT</td><td>VBAT</td></tr>
+</tbody>
+</table>
+<p>#####CPU</p>
+<p>Both versions of the SCK (1.0 and 1.1) are using the same CPU, ATMEGA32U4 (Arduino Leonardo). With the difference that the 1.0 works at 5V and 16MHZ and the 1.1 works at 3.3V and 8MHZ. In the 1.1 version we’ve improved the power consumption.</p>
+<p>This CPU has native USB and an UART TTL port allowing us to connect directly with the WIFI module.</p>
+<p><a href="http://www.atmel.com/Images/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf">ATMEGA32U4 datasheet</a></p>
+<p>#####USB CONNECTOR</p>
+<p>The 1.0 version uses a Mini USB connector and 1.1 version uses a Micro USB.</p>
+<p><img src="img/usb_connectors.png" alt="usb connectors"></p>
+<p>#####WIFI MODULE</p>
+<p>The RN-131 module is a standalone, embedded wireless 802.11 b/g networking module. With its small form factor and extremely low power consumption, the RN-131 fits perfectly for the SCK wireless communication requirements.</p>
+<p><img src="img/v1.0/main_board_wifly.jpg" alt="wifly module">
+<img src="img/main_board_wifly.jpg" alt="wifly module"></p>
+<p>Main features:</p>
+<ul>
+<li>Qualified 2.4-GHz IEEE 802.11b/g transceiver</li>
+<li>Ultra-low power: 4 uA sleep, 40 mA Rx, 210 mA Tx</li>
+<li>High throughput, 1 Mbps sustained data rate with TCP/IP and WPA2</li>
+<li>Small, compact surface-mount module</li>
+<li>On-board ceramic chip antenna and U.FL connector for external antenna</li>
+<li>8-Mbit flash memory and 128-KB RAM</li>
+<li>UART hardware interface</li>
+<li>10 general-purpose digital I/O pins</li>
+<li>8 analog sensor interfaces</li>
+<li>Real-time clock for wakeup and time stamping</li>
+<li>Accepts 3.3-V regulated or 2 to 3 V battery</li>
+<li>Supports ad hoc and infrastructure networking modes</li>
+<li>On board ECOS -OS, TCP/IP stacks</li>
+<li>Wi-Fi Alliance certified for WPA2-PSK</li>
+<li>FCC/CE/ICS certified and RoHS compliant.</li>
+<li>Industrial (RN-131G) and commercial (RN-131C) grade temperature options</li>
+</ul>
+<p><a href="http://ww1.microchip.com/downloads/en/DeviceDoc/rn-131-ds-v3.2r.pdf" target="_blank">WIFLY module - RN-131 datasheet</a></p>
+<p>#####BATTERY POWERING</p>
+<p>For powering the SCK, in both versions, we are using a 3.7v 2000 mAh li-on battery.</p>
+<p>SCK version 1.0 uses two different voltages, 3.3V and 5V to power the IC’s. To get 5V from 3.3v we are using a step-up based on NCP1400, thus having a stable voltage at 5v and 100mA. On the other hand, to regulate the voltage and to obtain 3.3v, the SCK uses the IC MAX604.</p>
+<p><img src="img/v1.0/main_board_NCP1400.jpg" alt="NCP1400">
+<img src="img/v1.0/main_board_MAX604.jpg" alt="MAX604"></p>
+<p><a href="http://www.onsemi.com/pub_link/Collateral/NCP1400A-D.PDF">NCP1400 datasheet</a>  <br>
+<a href="http://www.solarbotics.net/library/datasheets/MAX604.pdf">MAX604 datasheet</a></p>
+<p>In 1.1 version, to make things simpler, the voltage of entire SCK was unified to 3.3V. The responsible to regulate the voltage from 3.7v to 3.3v is the MCP1725 IC.</p>
+<p><img src="img/main_board_MCP1725.jpg" alt="MCP1725"></p>
+<p><a href="http://ww1.microchip.com/downloads/en/DeviceDoc/22026b.pdf">MCP1725 datasheet</a></p>
+<p>#####BATTERY CHARGING</p>
+<p>For charging the battery there are two ways, USB or solar panel. To carry out the charging we are using MCP73831 IC.</p>
+<p>For charging the battery in 1.0 version the solar panel have to be 12v and 500mA. In 1.1 version, the solar panel can be more versatile in terms of amperage.</p>
+<p><img src="img/v1.0/main_board_MCP73831.jpg" alt="MCP73831">
+<img src="img/main_board_MCP73831.jpg" alt="MCP73831"></p>
+<p><a href="http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf">MCP73831 datasheet</a></p>
+<p>#####SOLAR PANEL CHARGING</p>
+<p>Depending on the sunlight conditions the solar panel produces up to 12v, we have to reduce the voltage to 5v to feed up the Vin of the MCP73831 charger IC.</p>
+<p>To carry out this task we are using the LM2674 IC, a very efficient IC, with a rate of 91% of performance.</p>
+<p><img src="img/v1.0/main_board_LM2674.jpg" alt="LM2674">
+<img src="img/main_board_LM2674.jpg" alt="LM2674"></p>
+<p><a href="http://www.ti.com/lit/ds/symlink/lm2674.pdf">LM2674 datasheet</a></p>
+<p>#####RTC (REAL TIME CLOCK)</p>
+<p>The SCK has a real time clock for keeping track of time when the kit is offline. For this task we chose the DS1307 IC for the 1.0 version and the DS1339Y-3+ IC for the 1.1 version. Different IC due to the different voltages, 5V for the 1.0 version and 3.3V for the 1.1 version.</p>
+<p><img src="img/v1.0/main_board_DS1307.jpg" alt="DS1307">
+<img src="img/main_board_DS1339Y-3+.jpg" alt="DS1339Y-3+"></p>
+<p><a href="http://datasheets.maximintegrated.com/en/ds/DS1307.pdf" target="_blank">DS1307 datasheet</a><br>
+<a href="http://datasheets.maximintegrated.com/en/ds/DS1339-DS1339U.pdf" target="_blank">DS1339Y-3+ datasheet</a></p>
+<p>#####SD CARD READER</p>
+<p>The SD card is used to store the data captured by the sensors when the kit is offline. When the kit gets connected, the data will be reeded from the SD card and uploaded to the platform.</p>
+<p>To hold the SD card we are using the DM3CS holder. The SD card is powered at 3.3V and communicates with the CPU through SPI protocol.</p>
+<p><img src="img/v1.0/main_board_DM3CS.jpg" alt="DM3CS">
+<img src="img/main_board_DM3CS.jpg" alt="DM3CS"></p>
+<p><a href="http://www.mouser.com/ds/2/185/e60900232-38395.pdf" target="_blank">DM3CS datasheet</a></p>
+<p>#####EEPROM MEMORY</p>
+<p>For the users that don’t have a SD card we’ve added an EEPROM memory to store the data when the SCK is offline. We chose the 24LC256 IC that can store 32kBytes, it communicates with the CPU through I2C protocol.</p>
+<p><img src="img/v1.0/main_board_24LC256.jpg" alt="24LC256">
+<img src="img/main_board_24LC256.jpg" alt="24LC256"></p>
+<p><a href="http://ww1.microchip.com/downloads/en/DeviceDoc/20001203U.pdf" target="_blank">24LC256 datasheet</a></p>
+<p>#####MAIN BOARD BASIC SENSORS</p>
+<p>The main board has some basic sensors:</p>
+<ul>
+<li>Measurement of the battery level</li>
+<li>Measurement of the solar panel level</li>
+<li>Measurement of the wireless networks detected</li>
+</ul>
+<h4><a class="anchor" aria-hidden="true" id="sensor-board"></a><a href="#sensor-board" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>SENSOR BOARD</h4>
+<p>The sensor board contains the necessary sensors for measuring all the other parameters. This means NO2 and CO gases, sunlight, noise pollution, temperature, humidity. Also, the sensor board has an I2C bus, this allows to expand the SCK to other kind of sensors.</p>
+<p><img src="img/v1.0/sensor_board.jpg" alt="Sensor Board">
+<img src="img/sensor_board.jpg" alt="Sensor Board"></p>
+<p>#####NO2 AND CO SENSORS</p>
+<p>To measure these two gases we chose <a href="http://www.e2v.com/" target="_blank">e2v</a> sensors. In particular, metal oxide sensors MICS5525 and MICS2710, for version 1.0. And MICS4514, for version 1.1, that contains both sensors in one.</p>
+<p>Metal oxide sensors are based on oxide semiconductors. Their electrical conductivity is modulated due to the reaction between the semiconductor and the gases in the atmosphere.</p>
+<p><img src="img/v1.0/sensor_board_MICS5525.jpg" alt="MICS5525">
+<img src="img/v1.0/sensor_board_MICS2710.jpg" alt="MICS2710">
+<img src="img/sensor_board_MICS4514.jpg" alt="MICS4514"></p>
+<p><a href="http://www.e2v.com/shared/content/resources/File/sensors_datasheets/Metal_Oxide/mics-5525.pdf" target="_blank">MICS5525 datasheet</a><br>
+<a href="http://www.cdiweb.com/datasheets/e2v/mics-2710.pdf" target="_blank">MICS2710 datasheet</a><br>
+<a href="http://files.manylabs.org/datasheets/MICS-4514.pdf" target="_blank">MICS4514 datasheet</a></p>
+<p>#####LIGHT SENSOR</p>
+<p>The light sensor is a basic element to know the light pollution. In version 1.0, was used a LDR (light-dependent resistor) whose voltage varies depending on the light conditions.</p>
+<p>For version 1.1, was used a photodiode BH1730FVC. This sensor contains an I2C bus that gives us directly the amount of lux of ambient and infrared light.</p>
+<p><img src="img/v1.0/sensor_board_LDR.jpg" alt="LDR">
+<img src="img/sensor_board_BH1730FVC.jpg" alt="H1730FVC"></p>
+<p><a href="http://www.farnell.com/datasheets/1813319.pdf" target="_blank">BH1730FVC datasheet</a></p>
+<p>#####NOISE SENSOR</p>
+<p>The noise sensor is based on an electret microphone. For the version 1.0 WM-61A was used as the microphone, the captured audio signal is passed through an operational amplifier configured as band pass filter.</p>
+<p><img src="img/v1.0/sensor_board_noise_sensor.jpg" alt="Noise Sensor"></p>
+<p>For the version 1.1 POM-3044P-R was used.</p>
+<p><img src="img/sensor_board_noise_sensor.jpg" alt="Noise Sensor"></p>
+<p><a href="http://industrial.panasonic.com/www-data/pdf/ABA5000/ABA5000CE22.pdf" target="_blank">WM-61A datasheet</a><br>
+<a href="http://www.farnell.com/datasheets/40113.pdf" target="_blank">POM-3044P-R datasheet</a></p>
+<p>#####TEMPERATURE AND HUMIDITY SENSOR</p>
+<p>To measure temperature and humidity a module that integrates both sensors was used.</p>
+<p>For version 1.0 the RHT22 was used, it has <em>one wire</em> digital interface.</p>
+<p><img src="img/v1.0/sensor_board_RHT22.jpg" alt="RHT22 Sensor"></p>
+<p>For version 1.1 the SHT21 was used, it has <em>I2C</em> protocol and faster response between measures than the RHT22.</p>
+<p><img src="img/sensor_board_SHT21.jpg" alt="SHT21 Sensor"></p>
+<p><a href="https://www.sparkfun.com/datasheets/Sensors/Temperature/DHT22.pdf" target="_blank">RHT22 datasheet</a><br>
+<a href="http://www.mouser.com/ds/2/682/Sensirion_Humidity_SHT21_Datasheet_V4-469715.pdf" target="_blank">SHT21 datasheet</a></p>
+<p>#####3 AXIS ACCELEROMETER</p>
+<p>In version 1.0 we detected that some measures vary depending on the orientation of the SCK.</p>
+<p>That's why in version 1.1 we added the ADXL345 accelerometer to detect the position and to compensate the measures depending on the orientation of
+the SCK. This accelerometer communicates via I2C protocol with the kit.</p>
+<p><img src="img/sensor_board_ADXL345.jpg" alt="ADXL345"></p>
+<p><a href="http://www.analog.com/static/imported-files/data_sheets/ADXL345.pdf" target="_blank">ADXL345 datasheet</a></p>
+<p>#####I2C EXPANSION BUS</p>
+<p>Due to the ease of the I2C protocol. We’ve included and I2C bus to provide to the community the opportunity of expanding the SCK.</p>
+<p><img src="img/v1.0/sensor_board_i2c_bus.jpg" alt="I2C Bus">
+<img src="img/sensor_board_i2c_bus.jpg" alt="I2C Bus"></p>
+<h3><a class="anchor" aria-hidden="true" id="detailed-specifications"></a><a href="#detailed-specifications" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Detailed specifications</h3>
+<table>
+<thead>
+<tr><th>Smart Citizen Kit</th><th>SCK 1.0 (Goteo Board)</th><th>SCK 1.1 (Kickstarter Board)</th><th>SCK 1.5 (Upcoming!)</th></tr>
+</thead>
+<tbody>
+<tr><td><strong><em>Data Board</em></strong></td><td></td><td></td><td></td></tr>
+<tr><td><strong>MCU</strong></td><td><strong>ATMEGA32U4</strong></td><td><strong>ATMEGA32U4</strong></td><td><strong>SAMD21</strong></td></tr>
+<tr><td><strong>Clock</strong></td><td>16Mhz</td><td>8Mhz</td><td>32Mhz</td></tr>
+<tr><td><strong>WiFi</strong></td><td>Microchip RN-131 802.11 b/g</td><td>Microchip RN-131 802.11 b/g</td><td>Espressif ESP8266-12E</td></tr>
+<tr><td><strong>Firmware</strong></td><td><a href="https://github.com/fablabbcn/Smart-Citizen-Kit">Repository</a></td><td><a href="https://github.com/fablabbcn/Smart-Citizen-Kit">Repository</a></td><td><a href="https://github.com/fablabbcn/Smart-Citizen-Kit-1.5">Repository</a></td></tr>
+<tr><td><strong>Design files</strong></td><td><a href="https://github.com/fablabbcn/Smart-Citizen-Kit/tree/master/hardware/Goteo/v1.01">v1.01</a></td><td><a href="https://github.com/fablabbcn/Smart-Citizen-Kit/tree/master/hardware/Kickstarter">v1.1</a></td><td><a href="https://github.com/fablabbcn/Smart-Citizen-Kit-1.5/tree/master/hardware/">v1.5</a></td></tr>
+<tr><td><strong><em>Ambient Board</em></strong></td><td></td><td></td><td></td></tr>
+<tr><td><strong>Light</strong></td><td><strong>PVD-P8001</strong></td><td><strong>BH1730FVC</strong></td><td><strong>BH1730FVC</strong></td></tr>
+<tr><td><em>Type</em></td><td>LDR Analog Light Sensor</td><td>Digital Ambient Light Sensor</td><td>Digital Ambient Light Sensor</td></tr>
+<tr><td><em>Units</em></td><td>%</td><td>Lux</td><td>Lux</td></tr>
+<tr><td><em>Datasheet</em></td><td><a href="https://github.com/fablabbcn/Smart-Citizen-Kit/wiki/Datasheets/PDV-P8001.pdf">PDV-P8001.pdf</a></td><td><a href="https://github.com/fablabbcn/Smart-Citizen-Kit/wiki/Datasheets/BH-1730FCV.pdf">BH-1730FCV.pdf</a></td><td><a href="https://github.com/fablabbcn/Smart-Citizen-Kit/wiki/Datasheets/BH-1730FCV.pdf">BH-1730FCV.pdf</a></td></tr>
+<tr><td><em>Performance</em></td><td></td><td>0.008 - 65535 lx (+/- 15%) **</td><td>0.008 - 65535 lx (+/- 15%) **</td></tr>
+<tr><td><em>Firmware</em></td><td><code>SCKAmbient::getLight();</code></td><td><code>SCKAmbient::getLight():</code></td><td><em>Under development</em></td></tr>
+<tr><td><strong>Temp</strong></td><td><strong>DHT22</strong></td><td><strong>HPP828E031 (SHT21)</strong></td><td><strong>SHT21</strong></td></tr>
+<tr><td><em>Type</em></td><td>Digital Temperature and Relative Humidity Sensor</td><td>Digital Temperature and Relative Humidity Sensor</td><td>Digital Temperature and Relative Humidity Sensor</td></tr>
+<tr><td><em>Units</em></td><td>ºC</td><td>ºC</td><td>ºC</td></tr>
+<tr><td><em>Datasheet</em></td><td><a href="https://github.com/fablabbcn/Smart-Citizen-Kit/wiki/Datasheets/DHT22.pdf">DHT22.pdf</a></td><td><a href="https://github.com/fablabbcn/Smart-Citizen-Kit/wiki/Datasheets/HTU-21D.pdf">HTU-21D.pdf</a></td><td><a href="https://www.sensirion.com/fileadmin/user_upload/customers/sensirion/Dokumente/Humidity_Sensors/Sensirion_Humidity_Sensors_SHT21_Datasheet_V4.pdf">SHT-21.pdf</a></td></tr>
+<tr><td><em>Firmware</em></td><td><code>SCKAmbient::getDHT22();</code> <code>SCKAmbient::getHumidity();</code></td><td><code>SCKAmbient::getSHT21();</code> <code>SCKAmbient::getTemperature();</code></td><td><em>Under development</em></td></tr>
+<tr><td><em>Performance</em></td><td></td><td>Linearity R²&gt;0.94 *</td><td><em>Under tests</em></td></tr>
+<tr><td><strong>Humidity</strong></td><td><strong>DHT22</strong></td><td><strong>HPP828E031 (SHT21)</strong></td><td><strong>SHT21</strong></td></tr>
+<tr><td><em>Type</em></td><td>Digital Temperature and Relative Humidity Sensor</td><td>Digital Temperature and Relative Humidity Sensor</td><td>Digital Temperature and Relative Humidity Sensor</td></tr>
+<tr><td><em>Units</em></td><td>% Rel</td><td>% Rel</td><td>% Rel</td></tr>
+<tr><td><em>Datasheet</em></td><td><a href="https://github.com/fablabbcn/Smart-Citizen-Kit/wiki/Datasheets/DHT22.pdf">DHT22.pdf</a></td><td><a href="https://github.com/fablabbcn/Smart-Citizen-Kit/wiki/Datasheets/HTU-21D.pdf">HTU-21D.pdf</a></td><td><a href="https://www.sensirion.com/fileadmin/user_upload/customers/sensirion/Dokumente/Humidity_Sensors/Sensirion_Humidity_Sensors_SHT21_Datasheet_V4.pdf">SHT21.pdf</a></td></tr>
+<tr><td><em>Firmware</em></td><td><code>SCKAmbient::getDHT22();</code> <code>SCKAmbient::getHumidity();</code></td><td><code>SCKAmbient::getSHT21();</code> <code>SCKAmbient::getHumidity();</code></td><td><em>Under development</em></td></tr>
+<tr><td><em>Performance</em></td><td></td><td>Linearity R²&gt;0.97 *</td><td><em>Under tests</em></td></tr>
+<tr><td><strong>NO²ise</strong></td><td><strong>POM-3044P-R</strong></td><td><strong>POM-3044P-R</strong></td><td><strong>SPU0414HR5H</strong></td></tr>
+<tr><td><em>Type</em></td><td>Electret microphone with envelop follower sound pressure sensor</td><td>Electret microphone with envelop follower sound pressure sensor</td><td>New MEMS microphone with envelop follower sound pressure sensor</td></tr>
+<tr><td><em>Units</em></td><td>dB</td><td>dB</td><td>dB</td></tr>
+<tr><td><em>Datasheet</em></td><td><a href="https://github.com/fablabbcn/Smart-Citizen-Kit/wiki/Datasheets/POM-3044P-R.pdf">POM-3044P-R.pdf</a></td><td><a href="https://github.com/fablabbcn/Smart-Citizen-Kit/wiki/Datasheets/POM-3044P-R.pdf">POM-3044P-R.pdf</a></td><td><a href="http://www.kNO²wles.com/eng/content/download/3915/49630/version/7/file/SPU0414HR5H-SB.pdf">SPU0414HR5H.pdf</a></td></tr>
+<tr><td><em>Firmware</em></td><td><code>SCKAmbient::getNO²ise();</code></td><td><code>SCKAmbient::getNO²ise();</code></td><td><em>Under development</em></td></tr>
+<tr><td>*Performance</td><td></td><td>Range 50dB - 110dB (+/- 15%) **</td><td><em>Under tests</em></td></tr>
+<tr><td><strong>CO</strong></td><td><strong>MICS-5525</strong></td><td><strong>MiCS-4514</strong></td><td><strong>MiCS-4514</strong></td></tr>
+<tr><td><em>Type</em></td><td>MOS CO gas sensor</td><td>MOS CO and NO² gas sensor</td><td>MOS CO and NO² gas sensor</td></tr>
+<tr><td><em>Units</em></td><td>kOhm (ppm)</td><td>kOhm (ppm)</td><td>kOhm (ppm)</td></tr>
+<tr><td><em>Datasheet</em></td><td><a href="https://github.com/fablabbcn/Smart-Citizen-Kit/wiki/Datasheets/MICS-5525_CO.pdf">MICS-5525_CO.pdf</a></td><td><a href="https://github.com/fablabbcn/Smart-Citizen-Kit/wiki/Datasheets/MiCS-4514_CO_NO2.pdf">MiCS-4514_CO_NO2.pdf</a></td><td><a href="https://github.com/fablabbcn/Smart-Citizen-Kit/wiki/Datasheets/MiCS-4514_CO_NO2.pdf">MiCS-4514_CO_NO2.pdf</a></td></tr>
+<tr><td><em>Firmware</em></td><td><code>SCKAmbient::getMICS();</code></td><td><code>SCKAmbient::getMICS();</code></td><td><em>Under development</em></td></tr>
+<tr><td><em>Performance</em></td><td></td><td>Linearity 0.45 &lt; R² &lt; 0.82 *</td><td><em>Under tests</em></td></tr>
+<tr><td><strong>NO²2</strong></td><td><strong>MICS-2710</strong></td><td><strong>MiCS-4514</strong></td><td><strong>MiCS-4514</strong></td></tr>
+<tr><td><em>Type</em></td><td>MOS NO² gas sensor</td><td>MOS CO and NO² gas sensor</td><td>MOS CO and NO² gas sensor</td></tr>
+<tr><td><em>Units</em></td><td>kOhm (ppm)</td><td>kOhm (ppm)</td><td>kOhm (ppm)</td></tr>
+<tr><td><em>Datasheet</em></td><td><a href="https://github.com/fablabbcn/Smart-Citizen-Kit/wiki/Datasheets/MICS-2710_NO2.pdf">MICS-2710_NO2.pdf</a></td><td><a href="https://github.com/fablabbcn/Smart-Citizen-Kit/wiki/Datasheets/MiCS-4514_CO_NO2.pdf">MiCS-4514_CO_NO2.pdf</a></td><td><a href="https://github.com/fablabbcn/Smart-Citizen-Kit/wiki/Datasheets/MiCS-4514_CO_NO2.pdf">MiCS-4514_CO_NO2.pdf</a></td></tr>
+<tr><td><em>Firmware</em></td><td><code>SCKAmbient::getMICS();</code></td><td><code>SCKAmbient::getMICS();</code></td><td><em>Under development</em></td></tr>
+<tr><td><em>Performance</em></td><td></td><td>Linearity R²&lt;0.0 *</td><td><em>Under tests</em></td></tr>
+</tbody>
+</table>
+<p>** * ** <a href="http://www.aqmd.gov/aq-spec/evaluations#&amp;MainContent_C001_Col00=2">South Coast AQMD</a> The correlation coefficient (R²) is a statistical parameter indicating how well the performance of each sensor compares to that of a Federal Reference or Federal Equivalent Method (FRM and FEM, respectively) instrument. An R² approaching the value of 1 reflects a near perfect agreement, whereas a value of 0 indicates a complete lack of correlation
+** * ** Internal Smart Citizen Team WIP Evaluation Tests</p>
+<h3><a class="anchor" aria-hidden="true" id="enclosures"></a><a href="#enclosures" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Enclosures</h3>
+<p><img src="img/case.jpg" alt="Enclosure"></p>
+<p>We have designed a laser cut cover for an acrylic material and a 3D-Printed enclosure to better safeguard the hardware, particularly for outdoor applications.</p>
+<p>You can download the files through this links.</p>
+<p><a href="http://www.thingiverse.com/thing:262891" target="_blank">Smart Citizen Enclosure 1.0</a><br>
+<a href="http://www.thingiverse.com/thing:236976" target="_blank">Smart Citizen Enclosure 1.1</a></p>
+<p><img src="img/case_5.jpg" alt="Enclosure">
+<img src="img/case_6.jpg" alt="Enclosure2"></p>
+<p>Also, we are working in new cases that will be available soon.</p>
+<p><a href="assets/case_assembly.pdf" target="_blank">Smart Citizen Enclosure Assembly Instructions</a></p>
+<h3><a class="anchor" aria-hidden="true" id="acrylic-cases"></a><a href="#acrylic-cases" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Acrylic cases</h3>
+<p><img src="img/acrylic.jpg" alt="Acrylic"></p>
+<p>This case has been designed to protect the electronics on the circuit boards and allows for mount the SCK's hardware on walls and other surfaces without much trouble. Particularly for indoor applications.</p>
+<p><a href="https://github.com/acrobotic/Ai_Enclosure_SCK/tree/master/laser_cut" target="_blank">Acrylic cases</a></p>
+<h1><a class="anchor" aria-hidden="true" id="software"></a><a href="#software" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Software</h1>
+<h3><a class="anchor" aria-hidden="true" id="inside-the-sc-platform"></a><a href="#inside-the-sc-platform" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Inside the SC Platform</h3>
+<p>Once you've added your SCK to the platform and it's capturing and sending data correctly, you can interact with the platform in several ways. Visualizing the data, downloading the data and interacting with the data through the API.</p>
+<p><strong>Download Data</strong></p>
+<p>If you are interested in use the data captured by your sensors, you can download all the data for later use. To do this, go to your device page, at the bottom there is a button called <em>DOWNLOAD DATA</em>. You will receive an email with a link to download your data on <a href="https://en.wikipedia.org/wiki/Comma-separated_values" target="_blank">CSV</a> format in less than a minute,</p>
+<p><strong>API</strong></p>
+<p>The <a href="http://developer.smartcitizen.me/" target="_blank">Smart Citizen API</a> allows you to request back information from your devices and do incredible things with it.</p>
+<p>It is a <a href="https://en.wikipedia.org/wiki/Representational_state_transfer" target="_blank">REST</a> API and it returns the information in <a href="https://en.wikipedia.org/wiki/Json" target="_blank">JSON</a> format. This means you can easily access the information from any language like Javascript, PHP, Processing.org, Python, and start doing things with it quickly.</p>
+<h1><a class="anchor" aria-hidden="true" id="faq"></a><a href="#faq" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Faq</h1>
+<h3><a class="anchor" aria-hidden="true" id="how-do-i-register-again-my-sck"></a><a href="#how-do-i-register-again-my-sck" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>How do I register again my SCK?</h3>
+<p>It is really important to understand a SCK can be just registered one time to one device in the platform.</p>
+<p><em>Imagine how confusing it will be a single physical device publishing as two separate kits on the platform in two different locations!</em></p>
+<p>That's why you will need to <em>unlink</em> your SCK before you can register it again as another kit or when you would like to give your device to someone else to use it.</p>
+<p><img src="img/mac_1.png" alt="Register The Kit"></p>
+<p>Go to your Kits profile <a href="https://smartcitizen.me/profile/kits">page</a> select the kit you will like to unlink and go to <strong>Setup</strong>. You don't need to connect your SCK, just scroll down, remove the Mad Address number from the field and click <strong>Save</strong>.</p>
+<p><em>This way your kit will keep all the data on the platform but you will be able to register your SCK again as another kit. You can alway register again your SCK on the same device by following the standard setup process.</em></p>
+<h3><a class="anchor" aria-hidden="true" id="is-my-home-wireless-internet-going-to-work-with-the-sck"></a><a href="#is-my-home-wireless-internet-going-to-work-with-the-sck" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Is my home wireless internet going to work with the SCK?</h3>
+<p>The Smart Citizen Kit is designed to work with most home and office standard Wi-Fi routers and access points. However we do not support network names or passwords longer than <em>19 characters</em> or with a <code>$</code> character.</p>
+<p>We also do not support <strong>WPA Enterprise</strong> networks or <strong>Captive portal</strong> log in as the ones on some big companies and airports. We suggest you contact your IT support team, they can enable you special access in the network based on your device <strong>Mac Address</strong>.</p>
+<h3><a class="anchor" aria-hidden="true" id="how-to-use-the-sd-card"></a><a href="#how-to-use-the-sd-card" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>How to use the SD Card?</h3>
+<ol>
+<li><p><strong>microSD</strong>: We recommend formatting <strong>micro SD</strong> cards using the official SD tool you can download <a href="https://www.sdcard.org/downloads/formatter_4/">here</a>.</p></li>
+<li><p><strong>RTC</strong>: Place a <strong>CR1220</strong> cell battery on your kit. Before uploading the SD firmware use the on-line configuration tool at <a href="https://smartcitizen.me">smartcitizen.me</a> to set your Wi-Fi credentials. Turn your kit off and on for a minute, the blue led's will blink and your kit will connect to the internet and sync its the internal clock with our remote servers. Once the time is set the cell battery will keep SCK time in sync for more than 4 years.</p></li>
+<li><p>You can now install the <a href="https://github.com/fablabbcn/Smart-Citizen-Kit/tree/master/sck_beta_v0_8_7_SDCARD" target="_blank"><strong>SD firmware</strong></a> using the <a href="http://www.arduino.cc/en/Main/Software">Arduino IDE</a>.</p></li>
+</ol>
+<p><strong>Dependencies:</strong></p>
+<ul>
+<li><p>In order to compile and upload the firmware you will need to install the <strong>SdFat</strong> library for Arduino.</p></li>
+<li><p>Download the library <a href="https://github.com/greiman/SdFat">here</a> and install the library following the <a href="http://arduino.cc/en/Guide/Libraries">instructions</a>.</p></li>
+</ul>
+<p><strong>Boards:</strong></p>
+<ul>
+<li><p>For SmartCitizen Kit version 1.0 select <code>Tools/Boards/Arduino Leonardo</code> on the Arduino IDE (ATmega 32U4 at 16Mhz)</p></li>
+<li><p>For SmartCitizen Kit version 1.1 select <code>Tools/Boards/Lylipad Arduino USB</code> on the Arduino IDE (ATmega 32U4 at 8Mhz)</p></li>
+</ul>
+<p><strong>SD data format</strong></p>
+<p>When using the <strong>SD firmware</strong> on the SCK, data is stored as <strong>CSV</strong> (<a href="http://en.wikipedia.org/wiki/Comma-separated_values">comma separated</a>) file on the SD card.</p>
+<p>This is an example of the output file once opened on a spreadsheet application:</p>
+<table>
+<thead>
+<tr><th>Temperature</th><th>Humidity</th><th>Light</th><th>Battery</th><th>Solar Panel</th><th>CO</th><th>NO2</th><th>Noise</th><th>UTC</th></tr>
+</thead>
+<tbody>
+<tr><td>2821.20</td><td>4072.00</td><td>4413.10</td><td>96.40</td><td>0.00</td><td>94.67</td><td>0.65</td><td>5.23</td><td>2000-01-01 00:00:02</td></tr>
+<tr><td>2784.40</td><td>4236.80</td><td>5936.70</td><td>96.10</td><td>0.00</td><td>278.27</td><td>1.05</td><td>2.39</td><td>2000-01-01 00:00:02</td></tr>
+</tbody>
+</table>
+<p><strong>Data Conversions</strong></p>
+<p>The data stored is automatically converted to the proper units in firmware.</p>
+<p>If you prefer to do the conversions manually set <code>DataRaw false</code> in the <code>Constants.h</code> file and apply the formulas on the following table:</p>
+<table>
+<thead>
+<tr><th>ID</th><th>Sensor</th><th>Units</th><th>Conversion Formula</th></tr>
+</thead>
+<tbody>
+<tr><td>0</td><td>Temperature</td><td>ºC</td><td>T = -53 + 175.72 / 65536.0 * ( Traw * 10 )</td></tr>
+<tr><td>1</td><td>Humidity</td><td>%Rel</td><td>H = 7 + 125.0 / 65536.0 * ( Hraw * 10 )</td></tr>
+<tr><td>2</td><td>Light</td><td>Lux</td><td>L = Lraw / 10</td></tr>
+<tr><td>3</td><td>Battery</td><td>%</td><td>Not required</td></tr>
+<tr><td>4</td><td>Panel</td><td>mV</td><td>Not required</td></tr>
+<tr><td>5</td><td>CO</td><td>kOhm</td><td>Not required</td></tr>
+<tr><td>6</td><td>NO2</td><td>kOhm</td><td>Not required</td></tr>
+<tr><td>7</td><td>Noise</td><td>dB</td><td>Apply the conversion table from mV to dB: <a href="https://gist.github.com/pral2a/d767cc45874361fd38bf">CSV</a></td></tr>
+<tr><td>8</td><td>Date</td><td>DD:MM:YY</td><td>Not required</td></tr>
+<tr><td>9</td><td>Time</td><td>hh:mm:ss</td><td>Not required</td></tr>
+</tbody>
+</table>
+<h3><a class="anchor" aria-hidden="true" id="how-to-import-the-sd-card-data"></a><a href="#how-to-import-the-sd-card-data" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>How to import the SD card data?</h3>
+<p><strong>Sorry, this is temporary disabled! We are working on a new release.</strong></p>
+<p>You can import the recorded data in to <a href="http://smartcitizen.me">smartcitizen.me</a></p>
+<p>In your device page you will find the <strong>Import SD</strong> along with the Edit and Configure options.</p>
+<p>Using a microSD card reader get the <strong>post.csv</strong> file from your card, select it and click import. Data will be imported in to your device, data existing on the file already imported will be skipped. Your kit should be running the latest SD firmware  and the SCK time (RTC) should be set in order data can be imported.</p>
+<h3><a class="anchor" aria-hidden="true" id="is-my-kit-publishing-data-properly"></a><a href="#is-my-kit-publishing-data-properly" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Is my kit publishing data properly?</h3>
+<p><strong>Sorry, this is temporary disabled! We are working on a new release.</strong></p>
+<p>You can easily check each time your kit is publishing data to our platform in real time by enabling the debug mode on your device.</p>
+<ul>
+<li>Go to your device edit page in <a href="http://smartcitizen.me">smartcitizen.me</a>, set Debug Enabled and save it.</li>
+<li>Visit <a href="http://data.smartcitizen.me/debug">data.smartcitizen.me/debug</a> you will see the data from all the devices on debug mode every time they publish in real time. You can identify your device by the device id. *<em>Note data comes uncalibrated.</em></li>
+</ul>
+<p><img src="img/data_debug.png" alt="image"></p>
+<h3><a class="anchor" aria-hidden="true" id="how-to-retrieve-other-kit-s-data"></a><a href="#how-to-retrieve-other-kit-s-data" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>How to retrieve other kit's data?</h3>
+<p>Current <a href="http://developer.smartcitizen.me/">API</a> allows you full access to all the Smart Citizen Platform. Please, ask in the <a href="http://forum.smartcitizen.me/">forum</a> or contact <a href="mailto:support@smartcitizen.me">support@smartcitizen.me</a> for any questions regarding the API.</p>
+<h3><a class="anchor" aria-hidden="true" id="how-to-store-data-in-your-own-database"></a><a href="#how-to-store-data-in-your-own-database" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>How to store data in your own database?</h3>
+<p><strong>Kit's request</strong></p>
+<p>The Smart Citizen Kit is publishing by default the data as a PUT Http request, the sensor data is encoded as JSON.</p>
+<p>Here you can see how a kit's request will look like <em>(Note the request is not standard as it do not contains a payload)</em>:</p>
+<pre><code class="hljs css languages- shell">PUT /add HTTP/1.1
+Host: data.smartcitizen.me
+User-Agent: SmartCitizen
+X-SmartCitizenMacADDR: 00:00:00:00:00:00
+X-SmartCitizenVersion: 1.1-0.8.5-A
+X-SmartCitizenData: [{"temp":"29090.6", "hum":"6815.74", "light":"30000", "bat":"786", "panel":"0", "co":"112500", "no2":"200000", "noise":"2", "nets":"10", "timestamp":"2013-10-28 1:34:26"}]
+</code></pre>
+<p>Here you have a kit's request as a  <strong>Curl</strong> for test purposes:</p>
+<pre><code class="hljs css languages- shell"><span class="hljs-meta">$</span><span class="bash"> curl -X PUT -H <span class="hljs-string">'Host: data.smartcitizen.me'</span> -H <span class="hljs-string">'User-Agent: SmartCitizen'</span> -H <span class="hljs-string">'X-SmartCitizenMacADDR: 00:00:00:00:00:00'</span> -H <span class="hljs-string">'X-SmartCitizenVersion: 1.1-0.8.5-A'</span> -H <span class="hljs-string">'X-SmartCitizenData: [{"temp":"29090.6", "hum":"6815.74", "light":"30000", "bat":"786", "panel":"0", "co":"112500", "no2":"200000", "noise":"2", "nets":"10", "timestamp":"2013-10-28 1:34:26"}]'</span> data.smartcitizen.me/add</span>
+</code></pre>
+<p><strong>Data processing</strong></p>
+<p>Values are send without the proper scaling and some sensors as temperature, humidity and noise are sent in raw and then calibrated in our platform. This are the conversion required for <strong>SCK 1.1</strong> and above.</p>
+<table>
+<thead>
+<tr><th>Key</th><th>Sensor</th><th>Units</th><th>Conversion formula</th><th>Conversion Method</th></tr>
+</thead>
+<tbody>
+<tr><td>temp</td><td>Temperature</td><td>ºC</td><td>T = -53 + 175.72 / 65536.0 * Traw</td><td>SCKSensorData::tempConversion($rawTemp)</td></tr>
+<tr><td>hum</td><td>Humidity</td><td>%Rel</td><td>H = 7 + 125.0 / 65536.0 * Hraw</td><td>SCKSensorData::humConversion($rawHum)</td></tr>
+<tr><td>light</td><td>Light</td><td>Lux</td><td>L = Lraw / 10</td><td>SCKSensorData::lightConversion($rawLight)</td></tr>
+<tr><td>noise</td><td>Noise</td><td>dB</td><td>Apply the conversion table from mV to dB: <a href="https://gist.github.com/pral2a/d767cc45874361fd38bf">CSV</a></td><td>SCKSensorData::noiseConversion($rawNoise)</td></tr>
+<tr><td>co</td><td>CO</td><td>kOhm</td><td>CO = COraw / 10000</td><td>SCKSensorData::coConversion($rawCO)</td></tr>
+<tr><td>no2</td><td>NO2</td><td>kOhm</td><td>NO2 = NO2raw / 10000</td><td>SCKSensorData::no2Conversion($rawNO2)</td></tr>
+<tr><td>bat</td><td>Battery</td><td>%</td><td>B = Braw / 10</td><td>SCKSensorData::batConversion($rawBat)</td></tr>
+<tr><td>panel</td><td>Panel</td><td>mV</td><td>P = Praw / 10000</td><td>SCKSensorData::panelConversion($rawPanel)</td></tr>
+<tr><td>nets</td><td>Nets</td><td>Wi-Fi Networks</td><td>Not required</td><td>Not required</td></tr>
+<tr><td>timestamp</td><td>Timestamp</td><td>YYYY-MM-DD hh:mm:ss</td><td>Not required</td><td>Not required</td></tr>
+</tbody>
+</table>
+<p>You can use the <strong><a href="https://github.com/fablabbcn/Smart-Citizen-Kit/blob/master/data/">SCKSensorData</a> php</strong> class to re-scale and calibrate the received data. Check it on <a href="https://github.com/fablabbcn/Smart-Citizen-Kit/blob/master/data/">github</a>.</p>
+<p>Here is an example how to use it to receive a request, converted and store it in a CSV file:</p>
+<pre><code class="hljs css languages- php"><span class="hljs-meta">&lt;?php</span>
+    <span class="hljs-keyword">include</span>(<span class="hljs-string">'../sck_sensor_data.php'</span>);
+
+    $headers = getallheaders();
+
+    $data = $headers[<span class="hljs-string">'X-SmartCitizenData'</span>];
+
+    $datapoints = json_decode($data, <span class="hljs-keyword">true</span>);
+
+    <span class="hljs-keyword">foreach</span> ($datapoints <span class="hljs-keyword">as</span> $datapoint) {
+    $datapoint = SCKSensorData::SCK11Convert($datapoint);
+        $csv .= implode(<span class="hljs-string">', '</span>, $datapoint);
+    }
+
+    $csv .= PHP_EOL;
+
+    file_put_contents(<span class="hljs-string">'./data.csv'</span>, $csv, FILE_APPEND);
+<span class="hljs-meta">?&gt;</span>
+</code></pre>
+<p>You can find the complete example <a href="https://github.com/fablabbcn/Smart-Citizen-Kit/blob/master/data/examples/add.php">here</a>.</p>
+<p>Each sensor is implemented as a separate function and some general methods are available for simplifying the work. Here is an example:</p>
+<pre><code class="hljs css languages- php"><span class="hljs-meta">&lt;?php</span>
+
+    <span class="hljs-comment">/**
+     * noiseCalibration
+     *
+     * Noise calibration for SCK1.1 sound sensor. Converts mV in to dBs. 
+     * Based on a linear regression from a lookup table (db.json) 
+     * obtained after real measurements from our test facility.
+     * 
+     *
+     * <span class="hljs-doctag">@param</span> float $rawSound
+     * <span class="hljs-doctag">@return</span> float noise as sound pressure in dB
+     *
+     */</span>
+    
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">noiseCalibration</span><span class="hljs-params">($rawSound)</span>
+    </span>{
+        $dbTable = json_decode(file_get_contents(<span class="hljs-string">"db.json"</span>), <span class="hljs-keyword">true</span>);
+        <span class="hljs-keyword">return</span> round(<span class="hljs-keyword">self</span>::tableCalibration($dbTable, $rawSound), <span class="hljs-number">2</span>);
+    }
+<span class="hljs-meta">?&gt;</span>
+</code></pre>
+<p><strong>How to proceed</strong></p>
+<p>Here are the different paths you can take in order to built your own backend:</p>
+<ul>
+<li><p>Create a fork of the the <a href="https://github.com/fablabbcn/Smart-Citizen-Kit/tree/master" target="_blank">Smart Citizen Kit firmware</a> in order to send the data as your custom backend expect it.</p></li>
+<li><p>Create your own custom backend. We can share all the different modules of our backend in order for you to receive data as on the curl example above, calibrate it and store it. Contact us at <a href="mailto:support@smartcitizen.me">support@smartcitizen.me</a>.</p></li>
+<li><p>Keep using our backend but request our API <a href="http://developer.smartcitizen.me/" target="_blank">developer.smartcitizen.me</a> and then fill database choosen with it.</p></li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="how-to-install-the-drivers-on-windows"></a><a href="#how-to-install-the-drivers-on-windows" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>How to install the drivers on Windows?</h3>
+<p>In Windows you will need to install the Arduino Drivers if you haven't done it before.</p>
+<h4><a class="anchor" aria-hidden="true" id="windows-8-7-vista-and-xp"></a><a href="#windows-8-7-vista-and-xp" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Windows 8, 7, Vista, and XP</h4>
+<ul>
+<li>Go to the Arduino <a href="http://arduino.cc/en/Main/Software">download page</a> and download the latest version of the Arduino software for Windows.</li>
+<li>When the download is finished, un-zip it and open up the Arduino folder to confirm that yes, there are indeed some files and sub-folders inside. The file structure is important so don’t be moving any files around unless you really know what you’re doing.</li>
+<li>Power up your Smart Citizen Kit by connecting it to your computer with a USB cable. You should see the green LED near the on/off switch light up.</li>
+<li>If you’re running Windows 8, you’ll need to disable driver signing, so go see the Windows 8 section. If you’re running Windows 7, Vista, or XP, you’ll need to install some drivers, so head to the Windows 7, Vista, and XP section down below.</li>
+</ul>
+<h4><a class="anchor" aria-hidden="true" id="windows-8"></a><a href="#windows-8" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Windows 8</h4>
+<p>Windows 8 comes with a nice little security ‘feature’ that ‘protects’ you from unsigned driver installation. The Smart Citizen Kit driver is not signed so you’ll have to tell Windows to disable driver signing. This issue has been addressed in newer releases of the Arduino IDE, but if you run into issues, you can try this fix first.</p>
+<p>For a nice, step-by-step tutorial with pictures <a href="https://learn.sparkfun.com/tutorials/disabling-driver-signature-on-windows-8/overview">click here</a>, otherwise the steps are outlined below.</p>
+<p>To <em>temporarily</em> disable driver signing:</p>
+<ul>
+<li>From the Metro Start Screen, open Settings (move your mouse to the bottom-right-corner of the screen and wait for the pop-out bar to appear, then click the Gear icon)</li>
+<li>Click ‘More PC Settings’</li>
+<li>Click ‘General’</li>
+<li>Scroll down, and click ‘Restart now’ under ‘Advanced startup’.</li>
+<li>Wait a bit.</li>
+<li>Click ‘Troubleshoot’.</li>
+<li>Click ‘Advanced Options’</li>
+<li>Click ‘Windows Startup Settings’</li>
+<li>Click Restart.</li>
+<li>When your computer restarts, select ‘Disable driver signature enforcement‘ from the list.</li>
+</ul>
+<p>To <em>permanently</em> disable driver signing (recommended, but has some minor security implications):</p>
+<ul>
+<li>Go to the metro start screen</li>
+<li>Type in “cmd”</li>
+<li>Right click “Command Prompt” and select “Run as Administrator” from the buttons on the bottom of your screen</li>
+<li>Type/paste in the following commands: bcdedit -set loadoptions DISABLE_INTEGRITY_CHECKS bcdedit -set TESTSIGNING ON</li>
+<li>Reboot!</li>
+</ul>
+<h4><a class="anchor" aria-hidden="true" id="windows-7-vista-and-xp"></a><a href="#windows-7-vista-and-xp" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Windows 7, Vista, and XP</h4>
+<p>Installing the Drivers for the Arduino Uno (from Arduino.cc)</p>
+<ul>
+<li>Plug in your board and wait for Windows to begin it’s driver installation process</li>
+<li>After a few moments, the process will fail, despite its best efforts</li>
+<li>Click on the Start Menu, and open up the Control Panel</li>
+<li>While in the Control Panel, navigate to System and Security. Next, click on System</li>
+<li>Once the System window is up, open the Device Manager</li>
+<li>Look under Ports (COM &amp; LPT). You should see an open port named “Arduino UNO (COMxx)”. If there is no COM &amp; LPT section, look under ‘Other Devices’ for ‘Unknown Device’</li>
+</ul>
+<p><a href="img/windows_driver_1.png"><img src="img/windows_driver_1.png" alt="alt text"></a></p>
+<ul>
+<li>Right click on the “Arduino UNO (COMxx)” or “Unknown Device” port and choose the “Update Driver Software” option</li>
+<li>Next, choose the “Browse my computer for Driver software” option</li>
+</ul>
+<p><a href="img/windows_driver_2.png"><img src="img/windows_driver_2.png" alt="alt text"></a></p>
+<ul>
+<li>Finally, navigate to and select the Uno’s driver file, named “ArduinoUNO.inf”, located in the “Drivers” folder of the Arduino Software download (not the “FTDI USB Drivers” sub-directory). If you cannot see the .inf file, it is probably just hidden. You can select the ‘drivers’ folder with the ‘search sub-folders’ option selected instead.</li>
+<li>Windows will finish up the driver installation from there</li>
+</ul>
+<p><em>This documentation is proudly based on <a href="https://learn.sparkfun.com/tutorials/installing-arduino-ide/windows">Sparkfun Arduino on Windows</a> tutorial - CC BY-NC-SA 3.0.</em></p>
+<h3><a class="anchor" aria-hidden="true" id="which-lipo-batteries-to-use"></a><a href="#which-lipo-batteries-to-use" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Which LiPo batteries to use?</h3>
+<p>The battery that we are providing is 3.7v and 2000mAh</p>
+<h3><a class="anchor" aria-hidden="true" id="which-solar-panels-to-use"></a><a href="#which-solar-panels-to-use" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Which solar panels to use?</h3>
+<p>The solar panel it should fulfill the specification of a voltage bigger than 8v and less than 15v, 12v is the recommended voltage, and a minimum of 500mA.</p>
+<h3><a class="anchor" aria-hidden="true" id="how-i-can-extend-the-wi-fi-range"></a><a href="#how-i-can-extend-the-wi-fi-range" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>How I can extend the Wi-Fi range?</h3>
+<p>Is your SCK quite far away from Wi-Fi access point? You can use an external antenna with your SCK.</p>
+<p>The Wi-Fi modules has a U.FL antenna connector. We recommend you to use a <a href="https://www.sparkfun.com/products/662">U.FL to RP-SMA adaptor</a> in order to use <a href="https://www.sparkfun.com/products/558">standard Wi-Fi antennas</a>. You then will need to enable the <em>External Antenna</em> on the <a href="http://docs.smartcitizen.me/#/start/adding-a-smart-citizen-kit">Wi-Fi setup process</a> by selecting <em>External Antenna</em>.</p>
+<h3><a class="anchor" aria-hidden="true" id="what-is-the-spec-battery-type-for-the-button-cell-for-the-rtc"></a><a href="#what-is-the-spec-battery-type-for-the-button-cell-for-the-rtc" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>What is the spec (battery type) for the button-cell for the RTC?</h3>
+<p>The RTC battery is a CR1220</p>
+<h3><a class="anchor" aria-hidden="true" id="why-is-50db-the-microphone-lowest-value"></a><a href="#why-is-50db-the-microphone-lowest-value" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Why is 50dB the microphone lowest value?</h3>
+<p>Because the actual sensor is limited by the curve bounding from 50dB to 103dB</p>
+<h3><a class="anchor" aria-hidden="true" id="browsers-compatibility"></a><a href="#browsers-compatibility" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Browsers compatibility</h3>
+<p>The SmartCitizen platform is built using the latest Web technologies (such as HTML5, SVG and CSS3). These languages serve as a foundation for today’s websites and web applications.</p>
+<p>To enjoy Smart Citizen, we recommend you to use:</p>
+<p>Google Chrome 25+
+Firefox Mozilla 20+</p>
+<p>For the kit setup process only Google Chrome is supported.</p>
+<h3><a class="anchor" aria-hidden="true" id="what-are-the-leds-for-and-what-does-the-led-blinking-mean"></a><a href="#what-are-the-leds-for-and-what-does-the-led-blinking-mean" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>What are the LEDs for, and what does the LED blinking mean?</h3>
+<p>There are 5 LEDs, they are all on the base half of the SCK.  They can be understood in three groups:</p>
+<ul>
+<li><p>LED2 and LED1 - These are the two yellow (or orange) LEDs in the lower center-left of the board.  You will only see these lit when your USB cable is connected to the SCK and you are configuring or otherwise interacting with the SCK.  LED2 is the &quot;RX USB&quot; and will be lit when the SCK is receiving information via the USB connection. LED1 is the &quot;TX USB&quot; and will be lit when the SCK is sending information via the USB connection.</p></li>
+<li><p>LED4 and LED3 - These are the two blue LEDs in the lower center of the board.  You will see these blink often. LED3 is the &quot;WiFi Association&quot; and LED4 is the &quot;WiFi Connection.&quot; The blue LEDs will blink each time the SCK posts new data wirelessly. This is normal behavior and is expected, but it only happens in bursts (then there will be no blue LED lit for about 30-40 seconds). If your blue LEDs are blinking back and forth non-stop, this means your SCK has lost its WiFi connection. Check to make sure your router is still on, and that you're still in range of it.</p></li>
+<li><p>LED5 - This is the green LED in the upper left corner.  It will be lit when the SCK is turned on and has power.</p></li>
+</ul>
+<h1><a class="anchor" aria-hidden="true" id="troubleshooting"></a><a href="#troubleshooting" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Troubleshooting</h1>
+<h3><a class="anchor" aria-hidden="true" id="add-an-ssid-with-two-words"></a><a href="#add-an-ssid-with-two-words" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Add an SSID with two words</h3>
+<p>If your SSID has more than one word yo have to fill any space with the dollar ($) character.</p>
+<h3><a class="anchor" aria-hidden="true" id="serial-port-already-in-use"></a><a href="#serial-port-already-in-use" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Serial port already in use</h3>
+<p>This happens when one application is already using the serial port. For example, if you have the Arduino IDE serial monitor opened and you're trying to configure your SCK through the web browser. You have yo close the serial monitor first.</p>
+<h3><a class="anchor" aria-hidden="true" id="no-port-available"></a><a href="#no-port-available" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>No port available</h3>
+<p>This message will appear when you have uploaded the wrong firmware version to your SCK.</p>
+<h3><a class="anchor" aria-hidden="true" id="unable-to-connect-to-the-board"></a><a href="#unable-to-connect-to-the-board" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Unable to connect to the Board</h3>
+<p>This happens when one application is already using the serial port. For example, if you have the Arduino IDE serial monitor opened and you're trying to configure your SCK through the web browser. You have yo close the serial monitor first.</p>
+<h3><a class="anchor" aria-hidden="true" id="unable-to-connect-to-the-internet"></a><a href="#unable-to-connect-to-the-internet" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Unable to connect to the Internet</h3>
+<p>If you're getting the message &quot;Error in connection&quot; when you run the SCK firmware this may be due:</p>
+<ul>
+<li>Your router works with a protocol different than 802.11AG</li>
+<li>You have set wrong SSID name and/or password</li>
+<li>Your network has an encryption different than OPEN, WEP, WPA1, WPA2 OR WEP64</li>
+<li>Your firewall is blocking the mac address of your SCK</li>
+<li>Your internet connection is not stable</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="no-data-received-yet"></a><a href="#no-data-received-yet" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>No data received yet</h3>
+<p>This message appears the first time you register your kit, is due to cache issues. This issue normally is fixed after a few hours, in any case we are working to improve this issue.</p>
+<h3><a class="anchor" aria-hidden="true" id="port-is-not-appearing-on-the-drop-down"></a><a href="#port-is-not-appearing-on-the-drop-down" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Port is not appearing on the drop down</h3>
+<p>This may be due:</p>
+<ul>
+<li>The SCK is turned off.</li>
+<li>The USB cable you're using has wired only power cable and not the data cables.</li>
+<li>The bootloader is corrupted.</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="firmware-update-problem"></a><a href="#firmware-update-problem" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Firmware update problem</h3>
+<p>If you're having problems updating the firmware you can try one of these two options:</p>
+<ul>
+<li>Update the latest firmware through the web browser configurator.</li>
+<li>Update the latest firmware through Arduino IDE.</li>
+</ul>
+<p>If you're still having problems it's may be due to a hardware or software issue, contact us at <a href="mailto:support@smartcitizen.me">support@smartcitizen.me</a>.</p>
+<h3><a class="anchor" aria-hidden="true" id="no-mac-address-registered"></a><a href="#no-mac-address-registered" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>No MAC address registered</h3>
+<p>If you're getting this message, the may be due:</p>
+<ul>
+<li>Configuration process is not finished correctly.</li>
+<li>The WIFI module of your SCK is corrupted, so MAC address is not accessible. To repair your wifi module refer to this <a href="" target="_blank">tutorial</a>.</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="collapsed-usb-port"></a><a href="#collapsed-usb-port" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Collapsed USB port</h3>
+<p>First batches of SCK version 1.1 came with this issue. We have a tutorial you can follow to repair it or contact us at <a href="mailto:support@smartcitizen.me" target="_blank">support@smartcitizen.me</a>.</p>
+<h3><a class="anchor" aria-hidden="true" id="broken-lipo-battery-wire"></a><a href="#broken-lipo-battery-wire" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Broken LiPo battery wire</h3>
+<p>Depending on the conditions, the battery wires can suffer until its break. We encourage you to read this <a href="https://www.sparkfun.com/tutorials/241" target="_blank">Battery Common Care Techniques</a> in order to preserve your battery.</p>
+<h3><a class="anchor" aria-hidden="true" id="non-stop-blue-led-blinking"></a><a href="#non-stop-blue-led-blinking" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Non-Stop Blue LED Blinking</h3>
+<p>If your blue LEDs are blinking back and forth non-stop, this means your SCK has lost its WiFi connection. Check to make sure your router is still on, and that you're still in range.</p>
+<h3><a class="anchor" aria-hidden="true" id="reinstall-the-bootloader-using-another-arduino"></a><a href="#reinstall-the-bootloader-using-another-arduino" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Reinstall the bootloader using another Arduino</h3>
+<p>In this tutorial we are going to show you how turn an Arduino into AVR ISP to burn the bootloader to your SCK.</p>
+<p><em>The bootloader is a small piece of code running inside your Smart Citizen Kit allowing it to be programmed and configured over USB. If suddenly you do not see anymore the USB / Serial port when connecting your Kit to a Computer maybe your bootloader crashed and it is time to reinstall it.</em></p>
+<p><img src="img/arduino-uno-isp-2.jpg" alt="Select the board"></p>
+<h4><a class="anchor" aria-hidden="true" id="parts"></a><a href="#parts" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Parts:</h4>
+<ul>
+<li><a href="https://store.arduino.cc/product/GBX00066">Arduino Board</a></li>
+<li><a href="http://www.seeedstudio.com/item_detail.html?p_id=1319">6 Patch Cables Male Female</a></li>
+</ul>
+<h4><a class="anchor" aria-hidden="true" id="software-1"></a><a href="#software-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Software:</h4>
+<ul>
+<li><a href="https://www.arduino.cc/en/Main/Software">Arduino IDE</a></li>
+</ul>
+<h4><a class="anchor" aria-hidden="true" id="instructions"></a><a href="#instructions" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Instructions:</h4>
+<ul>
+<li>Open the <strong>ArduinoISP</strong> sketch example in menu <code>File &gt; Examples &gt; ArduinoISP</code>.</li>
+<li>Select the correct board and ports in the menu <code>Tools &gt; Board &gt; Port</code> and <code>Tools &gt; Board &gt; Port</code> that correspond to the board you are using as the programmer (e.g., Arduino UNO).</li>
+<li>Upload the <strong>ArduinoISP</strong> sketch.</li>
+<li>Wire your Arduino board to the SCK as shown in the diagram below using the Patch cables.</li>
+</ul>
+<p><em>Take care the ISCP VCC goes to the 3.3V Pin on the Arduino UNO since the Smart Citizen Kit works at 3.3V</em></p>
+<p><img src="img/arduino-uno-isp.png" alt="Select the board"></p>
+<ul>
+<li><p>Select the  board in the <code>Tools &gt; Board menu</code></p>
+<ul>
+<li>For SmartCitizen Kit version 1.0 select <em>Arduino Leonardo</em> (ATmega 32U4 at 16Mhz)</li>
+<li>For SmartCitizen Kit version 1.1 select <em>Arduino LilyPad USB</em> (ATmega 32U4 at 8Mhz)</li>
+</ul></li>
+<li><p>Select in <code>Tools &gt; Programmer &gt; Arduino as ISP</code>.</p></li>
+<li><p>Select in <code>Tools &gt; Burn Bootloader</code>. This step can take some minutes.</p></li>
+<li><p><em>Done!</em> Please, go back to the on-line setup page in order to install the firmware again.</p></li>
+</ul>
+<p><img src="img/arduino_board.png" alt="Select the board"></p>
+<p><em>We know this is not an easy task! For any question contact <a href="mailto:support@smartcitizen.me">support@smartcitizen.me</a> or ask for help in the <a href="http://forum.smartcitizen.me/">forum</a>.</em></p>
+<h3><a class="anchor" aria-hidden="true" id="reinstall-the-bootloader-using-the-avrisp-mkii"></a><a href="#reinstall-the-bootloader-using-the-avrisp-mkii" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Reinstall the bootloader using the AVRISP MKII</h3>
+<p>In this tutorial we are going to show you how to program the SCK with the Atmel AVRISP MKII In-System Programmer. This is not a common tool you might have but we suggest you ask your closest <a href="https://www.fablabs.io/map">Fab Lab</a>.</p>
+<p><em>The bootloader is a small piece of code running inside your Smart Citizen Kit allowing it to be programmed and configured over USB. If suddenly you do not see anymore the USB / Serial port when connecting your Kit to a Computer maybe your bootloader crashed and it is time to reinstall it.</em></p>
+<h4><a class="anchor" aria-hidden="true" id="parts-1"></a><a href="#parts-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Parts:</h4>
+<ul>
+<li><a href="http://www.atmel.com/tools/AVRISPMKII.aspx">AVRISP mkII</a></li>
+</ul>
+<h4><a class="anchor" aria-hidden="true" id="software-2"></a><a href="#software-2" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Software:</h4>
+<ul>
+<li><a href="https://www.arduino.cc/en/Main/Software">Arduino IDE</a></li>
+</ul>
+<h4><a class="anchor" aria-hidden="true" id="instructions-1"></a><a href="#instructions-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Instructions:</h4>
+<ul>
+<li>Connect the AVRISP mkII with the USB cable to the computer.</li>
+<li>Connect your Smart Citizen Kit to the computer with the micro-USB cable.</li>
+<li>Connect the six pins bus cable of the AVRISP mkII to the ISP connector of the SCK Board as shown the picture.</li>
+</ul>
+<p><img src="img/atmel-isp.png" alt="Select the board"></p>
+<ul>
+<li>Switch on your Smart Citizen Kit, you'll find out a tiny switch in one side.</li>
+<li>Select the  board in the <code>Tools &gt; Board menu</code>
+<ul>
+<li>For SmartCitizen Kit version 1.0 select <em>Arduino Leonardo</em> (ATmega 32U4 at 16Mhz)</li>
+<li>For SmartCitizen Kit version 1.1 select <em>Arduino LilyPad USB</em> (ATmega 32U4 at 8Mhz)</li>
+</ul></li>
+<li>Select in <code>Tools &gt; Programmer &gt; AVRISP MKII</code>.</li>
+<li>Select in <code>Tools &gt; Burn Bootloader</code>. This step can take some minutes, the led  AVRISP mkII will blink and after go green.</li>
+<li><em>Done!</em> Please, go back to the on-line setup page in order to install the firmware again.</li>
+</ul>
+<p><em>We know this is not an easy task! For any question contact <a href="mailto:support@smartcitizen.me">support@smartcitizen.me</a> or ask for help in the <a href="http://forum.smartcitizen.me/">forum</a> .</em></p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-next button" href="/docs/doc1.html">Latin-ish →</a></div></div></div><nav class="onPageNav"></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/docusaurus.svg" alt="Smartcitizen documentation" width="66" height="58"/></a><div><h5>Docs</h5><a href="/docs/en/doc1.html">Getting Started (or other categories)</a><a href="/docs/en/doc2.html">Guides (or other categories)</a><a href="/docs/en/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/en/users.html">User Showcase</a><a href="http://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://code.facebook.com/projects/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2018 Your Name or Your Company Name</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+              var search = docsearch({
+                
+                apiKey: 'my-api-key',
+                indexName: 'my-index-name',
+                inputSelector: '#search_input_react',
+                algoliaOptions: {}
+              });
+            </script></body></html>
