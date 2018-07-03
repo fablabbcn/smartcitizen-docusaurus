@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://fablabbcn.github.io/smartcitizen-docusaurus//blog</id>
-    <title>Smartcitizen documentation Blog</title>
+    <title>Smartcitizen Docs Blog</title>
     <updated>2017-10-24T06:00:00Z</updated>
     <generator>Feed for Node.js</generator>
     <link rel="alternate" href="https://fablabbcn.github.io/smartcitizen-docusaurus//blog"/>
-    <subtitle>The best place to stay up-to-date with the latest Smartcitizen documentation news and events.</subtitle>
+    <subtitle>The best place to stay up-to-date with the latest Smartcitizen Docs news and events.</subtitle>
     <logo>https://fablabbcn.github.io/smartcitizen-docusaurus//img/docusaurus.svg</logo>
     <rights>Copyright © 2018 Your Name or Your Company Name</rights>
     <entry>

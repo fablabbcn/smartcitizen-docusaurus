@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
     <channel>
-        <title>Smartcitizen documentation Blog</title>
+        <title>Smartcitizen Docs Blog</title>
         <link>https://fablabbcn.github.io/smartcitizen-docusaurus//blog</link>
-        <description>The best place to stay up-to-date with the latest Smartcitizen documentation news and events.</description>
+        <description>The best place to stay up-to-date with the latest Smartcitizen Docs news and events.</description>
         <lastBuildDate>Tue, 24 Oct 2017 06:00:00 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>Feed for Node.js</generator>
         <image>
-            <title>Smartcitizen documentation Blog</title>
+            <title>Smartcitizen Docs Blog</title>
             <url>https://fablabbcn.github.io/smartcitizen-docusaurus//img/docusaurus.svg</url>
             <link>https://fablabbcn.github.io/smartcitizen-docusaurus//blog</link>
         </image>
