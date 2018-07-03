@@ -23,8 +23,8 @@ const users = [
 const siteConfig = {
   title: 'Smartcitizen Docs' /* title for your website */,
   tagline: 'SmartCitizen',
-  url: 'https://fablabbcn.github.io/smartcitizen-docusaurus/' /* your website url */,
-  baseUrl: '/' /* base url for your project */,
+  url: 'https://fablabbcn.github.io' /* your website url */,
+  baseUrl: '/smartcitizen-docusaurus/' /* base url for your project */,
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
